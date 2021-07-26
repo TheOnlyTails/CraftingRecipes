@@ -25,11 +25,6 @@ jobs:
       - name: Generate Documentation
         run: ./gradlew dokkaHtml
 
-      - name: Deploy GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./docs/build
-          publish_branch: main
-          keep_files: true
-          full_commit_message: Publish documentation
+          commit_message: Documentation changes
