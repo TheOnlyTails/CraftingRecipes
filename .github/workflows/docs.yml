@@ -14,14 +14,6 @@ jobs:
       - name: Checkout CraftingTables
         uses: actions/checkout@v2
 
-      - uses: dorny/paths-filter@v2
-        id: filter
-        with:
-          filters: |
-            docs_changed:
-              - 'docs/**'
-
-
       - name: Set up JDK 16
         uses: actions/setup-java@v1
         with:
@@ -35,7 +27,6 @@ jobs:
 
       - name: Deploy GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: steps.filter.outputs.docs_changed == 'true'
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./docs/build
