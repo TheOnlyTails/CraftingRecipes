@@ -115,7 +115,7 @@ tasks.named<Jar>("jar") {
 	finalizedBy("reobfJar")
 }
 
-tasks.dokkaJekyll.configure {
+tasks.dokkaHtml.configure {
 	outputDirectory.set(projectDir.resolve("docs"))
 }
 
