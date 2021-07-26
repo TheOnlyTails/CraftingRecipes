@@ -33,6 +33,8 @@ jobs:
              
       - name: Deploy GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        publish_dir: ./docs/build
-        keep_files: true
-        full_commit_message: Publish documentation
+        if: steps.filter.outputs.docs_changed == 'true'
+        with: 
+          publish_dir: ./docs/build
+          keep_files: true
+          full_commit_message: Publish documentation
