@@ -11,6 +11,8 @@ A Kotlin DSL for creating crafting recipes in Minecraft Forge mods.
 For documentation and usage instructions, please take a look at
 the [wiki](https://github.com/TheOnlyTails/CraftingRecipes/wiki).
 
+KDocs for the library (generated with [Dokka](https://github.com/kotlin/dokka)): https://craftingrecipes.theonlytails.com/
+
 Here's
 the [`maven-metadata.xml`](https://s01.oss.sonatype.org/service/local/repositories/releases/content/com/theonlytails/craftingrecipes/maven-metadata.xml)
 of this library.
@@ -55,5 +57,5 @@ The `isTransitive` property is added to make sure the library is imported correc
 ---
 
 Check out other DSLs in the DataGenerators family!
-- [LootTables](https://github.com/theonlytails/loottables)!
-- [BlockModels](https://github.com/theonlytails/BlockModels)!
+- [LootTables](https://github.com/theonlytails/loottables)
+- [BlockModels](https://github.com/theonlytails/BlockModels)
