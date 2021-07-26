@@ -1,4 +1,4 @@
-$dokka.format:jekyll-v1
+$dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:com.theonlytails.craftingrecipes////PointingToDeclaration/-crafting-recipes/com.theonlytails.craftingrecipes/index.html
 $dokka.location:com.theonlytails.craftingrecipes//asId/kotlin.String#/PointingToDeclaration/-crafting-recipes/com.theonlytails.craftingrecipes/as-id.html
