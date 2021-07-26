@@ -37,6 +37,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: steps.filter.outputs.docs_changed == 'true'
         with:
+          github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./docs/build
           keep_files: true
           full_commit_message: Publish documentation
