@@ -37,6 +37,7 @@ println(
 )
 
 repositories {
+    mavenLocal()
 	maven("https://thedarkcolour.github.io/KotlinForForge/")
 	mavenCentral()
 }
@@ -77,6 +78,7 @@ configure<UserDevExtension> {
 			mods {
 				create(testModId) {
 					source(sourceSets["test"])
+                    source(sourceSets["main"])
 				}
 			}
 		}
