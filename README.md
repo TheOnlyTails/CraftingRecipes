@@ -56,6 +56,6 @@ The `isTransitive` property is added to make sure the library is imported correc
 
 ---
 
-Check out other DSLs in the DataGenerators family!
-- [LootTables](https://github.com/theonlytails/loottables)
+Check out other DSLs in the DataGoblin family!
+- [Loot](https://github.com/theonlytails/lootgoblin)
 - [BlockModels](https://github.com/theonlytails/BlockModels)
